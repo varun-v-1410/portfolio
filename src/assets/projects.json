@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Hangman",
+        "description":"One of the most popular games we played as kids🧒 was Hangman. Whenever we have free time, let's spend it with our cousins or friends 🤝, one of the first games that came to mind was hangman. In fact, this was one of the games/activities with word-related topics of a subject to go when the teachers thought of a fun activity to conduct in class while keeping the silence and decorum of the room.",
+        "image":"proj1",
+        "github":"https://github.com/varun-v-1410/Hangman",
+        "tech":["Node.js","Expo","React Native","Async-Storage"]
+    },
+    {
+        "name":"Food-Recipes",
+        "description":"'Are you tired of the same old meals? Craving inspiration in the kitchen? Look no further! Our app offers a treasure trove of diverse recipes, catering to all tastes, preferences, and dietary needs. Whether you're a novice cook or a seasoned chef, our step-by-step instructions and handy tips will guide you through every dish with ease. Say goodbye to mealtime monotony and hello to a world of delicious possibilities at your fingertips'",
+        "image":"https://github.com/varun-v-1410/Food-Recipes/raw/main/mockup.png",
+        "live":"https://varun-v-1410.github.io/Food-Recipes/",
+        "github":"https://github.com/varun-v-1410/Food-Recipes",
+        "tech":["Node.js","Expo","React Native","MealDB API"]
+    }
+]

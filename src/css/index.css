@@ -1,10 +1,19 @@
+/* Global CSS File */
+
+/* Importing Fonts */
 @font-face {
     font-family: 'CascadiaCode';
     src: url('../fonts/CascadiaCode.ttf') format('truetype');   
 }
 
+.font-cascadia {
+    font-family: 'CascadiaCode', monospace;
+}
+
+/* Global CSS */
 html{
     overflow-x: hidden;
+    scrollbar-width: thin;
 }
 
 html, body, #root {
