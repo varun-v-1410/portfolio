@@ -1,6 +1,6 @@
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { SiCplusplus, SiPython, SiJavascript, SiReact, SiExpress, SiBootstrap, SiTensorflow, SiScikitlearn, SiGithubcopilot } from "react-icons/si";
-import { RiJavaLine, RiNotionFill, RiPenNibFill, RiTeamFill } from "react-icons/ri";
+import { SiCplusplus, SiPython, SiJavascript, SiReact, SiExpress, SiBootstrap, SiTensorflow, SiScikitlearn, SiGithubcopilot, SiVite, SiSpringboot, SiPostman, SiMongodb, SiSurrealdb} from "react-icons/si";
+import { RiJavaLine, RiNotionFill, RiPenNibFill, RiTeamFill, RiNextjsFill } from "react-icons/ri";
 import { FaNode, FaGitAlt, FaPuzzlePiece, FaSwimmer, FaEdge, FaCode } from "react-icons/fa";
 import { LuBrainCircuit } from "react-icons/lu";
 import { GiBrain } from "react-icons/gi";
@@ -14,6 +14,9 @@ import ParticleBackground from "./components/ParticleBackground";
 import OtherSkill from "./components/OtherSkill";
 
 import ProfilePIc from './assets/profile-pic.jpg';
+import { TbBrandMysql } from "react-icons/tb";
+import BackToTop from "./components/BactToTop";
+import { CgGym } from "react-icons/cg";
 
 export default function Home() {
 
@@ -67,13 +70,16 @@ export default function Home() {
           <Programming Beginner={[{icon:<SiCplusplus/>,name:"C++"}]} 
           Intermediate={[{icon:<RiJavaLine/>,name:"Java"},{icon:<SiPython/>,name:"Python"},{icon:<SiJavascript/>,name:"JavaScript"},{icon:<LuBrainCircuit/>,name:"Machine Learning"}]} 
           Advanced={[{icon:<SiReact/>,name:"React"},{icon:<SiReact/>,name:"React Native"},{icon:<GiBrain/>,name:"Deep Learning"}]}/>
-          <OtherSkill heading="Tools" tools={[{icon:<FaNode/>,name:"Node.js"},{icon:<SiExpress/>,name:"Express.js"},{icon:<SiBootstrap/>,name:"Bootstrap"},{icon:<RiNotionFill/>,name:"Notion"},{icon:<FaGitAlt/>,name:"Git"},{icon:<FaGithubSquare/>,name:"Github"},{icon:<PiMicrosoftExcelLogoFill/>,name:"MS OFfice"},{icon:<SiTensorflow/>,name:"Tensorflow"},{icon:<SiScikitlearn/>,name:"Scikit-Learn"},{icon:<SiGithubcopilot/>,name:"Github Copilot"}]}/>
+          <OtherSkill heading="Frameworks" tools={[{icon:<FaNode/>,name:"Node.js"},{icon:<SiExpress/>,name:"Express.js"},{icon:<SiBootstrap/>,name:"Bootstrap"},{icon:<SiTensorflow/>,name:"Tensorflow"},{icon:<SiScikitlearn/>,name:"Scikit-Learn"},{icon:<RiNextjsFill/>,name:"Next.js"},{icon:<SiVite/>,name:"Vite"},{icon:<SiSpringboot/>,name:"Spring Boot"}]}/>
+          <OtherSkill heading="Tools" tools={[{icon:<RiNotionFill/>,name:"Notion"},{icon:<FaGitAlt/>,name:"Git"},{icon:<FaGithubSquare/>,name:"Github"},{icon:<PiMicrosoftExcelLogoFill/>,name:"MS OFfice"},{icon:<SiGithubcopilot/>,name:"Github Copilot"},{icon:<SiPostman/>,name:"Postman"}]}/>
+          <OtherSkill heading="Databases" tools={[{icon:<TbBrandMysql/>,name:"MySQL"},{icon:<SiMongodb/>,name:"MongoDB"},{icon:<SiSurrealdb/>,name:"SurrealDB"}]}/>
           <OtherSkill heading="Soft Skills" tools={[{icon:<RiTeamFill/>,name:"Teamwork"},{icon:<MdPublishedWithChanges/>,name:"Adaptability"},{icon:<FaPuzzlePiece/>,name:"Problem Solving"}]}/>
           <OtherSkill heading="Languages" tools={[{icon:"A",name:"English"},{icon:"ಅ",name:"Kannada"},{icon:"अ",name:"Hindi"}]} />
-          <OtherSkill heading="Hobbies" tools={[{icon:<GiShuttlecock/>,name:"Badminton"},{icon:<FaSwimmer/>,name:"Swimming"},{icon:<RiPenNibFill/>,name:"Research"},{icon:<FaEdge/>,name:"Browsing web"}]} />
+          <OtherSkill heading="Hobbies" tools={[{icon:<GiShuttlecock/>,name:"Badminton"},{icon:<FaSwimmer/>,name:"Swimming"},{icon:<RiPenNibFill/>,name:"Research"},{icon:<FaEdge/>,name:"Browsing web"},{icon:<CgGym/>,name:"Workout"}]} />
           <OtherSkill heading="Interests" tools={[{icon:<FaCode/>,name:"Programming"},{icon:<GiMountainClimbing/>,name:"Proactive Learning"}]} />
         </div>
       </section>
+      <BackToTop />
     </div>
   )
 }

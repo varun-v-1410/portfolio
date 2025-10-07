@@ -2,6 +2,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import NavBar from "./components/NavBar";
 import MyResume from "./assets/Varun_Resume.pdf";
 import { useEffect, useState } from "react";
+import BackToTop from "./components/BactToTop";
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 export default function Resume() {    
@@ -26,6 +27,7 @@ export default function Resume() {
                     <a href={MyResume} target="_blank" className="btn btn-primary w-auto">Download Resume</a>
                 </div>
             </section>
+        <BackToTop />
         </div>
     );
 }

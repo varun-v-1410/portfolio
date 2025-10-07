@@ -7,6 +7,7 @@ import proj1 from './assets/undraw_developer_activity_re_39tg.svg';
 
 import projlst from "./assets/projects.json";
 import ParticleBackground from "./components/ParticleBackground";
+import BackToTop from "./components/BactToTop";
 
 export default function Projects() {
 
@@ -79,14 +80,14 @@ export default function Projects() {
                                                 <label className="fs-6 lh-base">
                                                     Implemented using,
                                                 </label>
-                                                {proj.tech.map((t, i) => (
+                                                {proj.tech ? proj.tech.map((t, i) => (
                                                     <span
                                                         key={i}
                                                         className="badge bg-primary h6 w-auto"
                                                     >
                                                         {t}
                                                     </span>
-                                                ))}
+                                                )) : null}
                                             </div>
                                         </div>
                                     </ReactCardFlip>
@@ -101,14 +102,16 @@ export default function Projects() {
                                                 Live Demo <IoMdOpen color="#fff" />
                                             </a>
                                         ) : null}
-                                        <a
-                                            href={proj.github}
-                                            className="text-decoration-none fs-6 txt-gradient-1"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            <IoLogoGithub color="#fff" /> View Code
-                                        </a>
+                                        {proj.github ? ( 
+                                            <a
+                                                href={proj.github}
+                                                className="text-decoration-none fs-6 txt-gradient-1"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <IoLogoGithub color="#fff" /> View Code
+                                            </a>
+                                        ) : null}
                                     </div>
                                 </div>
                             </div>
@@ -116,6 +119,7 @@ export default function Projects() {
                     ))}
                 </div>
             </section>
+            <BackToTop />
         </div>
     );
 }
